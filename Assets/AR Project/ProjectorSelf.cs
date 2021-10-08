@@ -18,7 +18,7 @@ public class ProjectorSelf : MonoBehaviour
         arCam = GameObject.Find("AR Camera");
         playerPos = arCam.transform.position;
         targetPos = playerPos;
-        speed = (int)Random.Range(10f, 20f);
+        speed = (int)Random.Range(5f, 7f);
         pM = GameObject.Find("Spawner").GetComponent<ProjectileManager>();
     }
 
