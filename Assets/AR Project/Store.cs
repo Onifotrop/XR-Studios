@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-public class GameManager : MonoBehaviour
+public class Store : MonoBehaviour
 {
     ARRaycastManager rayCastManager;
     public ProjectileManager pM;
@@ -20,21 +20,31 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.touchCount > 0 || Input.GetTouch(0).phase == TouchPhase.Began)
+        ray = arCam.ScreenPointToRay(Input.GetTouch(0).position);
+        if (Physics.Raycast(ray, Mathf.Infinity))
         {
-            ray = arCam.ScreenPointToRay(Input.GetTouch(0).position);
+            Debug.Log("Hit something");
+        }
+        if(Input.touchCount == 0) return;
+        Touch touch = Input.GetTouch(0);
 
-            if (Physics.Raycast(ray,out hit,Mathf.Infinity))
+        if (rayCastManager.Raycast(touch.position, raycastHits))
+        {
+            if (touch.phase == TouchPhase.Began)
             {
-                pM.hitCounter += 1;
-                Destroy(hit.transform.gameObject);
+                
+                Ray ray = arCam.ScreenPointToRay(touch.position);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.collider.CompareTag("Target"))
+                    {
+                        Destroy(hit.collider.gameObject);
+                        pM.hitCounter += 1;
+                    }
+                    
+                }
             }
         }
-        
-        
-        
-        
         if (pM.hitCounter >= 10f)
         {
             spawnerTwo.SetActive(true);

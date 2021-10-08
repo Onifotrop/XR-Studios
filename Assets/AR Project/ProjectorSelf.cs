@@ -37,14 +37,4 @@ public class ProjectorSelf : MonoBehaviour
 
     }
     
-    public void OnTriggerEnter(Collider other)
-    {
-        print("Triggered");
-        if (other.CompareTag("Player"))
-        {
-            print("Hit");
-            pM.hitCounter -= 1f;
-            Destroy(this.gameObject);
-        }
-    }
 }

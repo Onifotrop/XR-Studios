@@ -10,6 +10,8 @@
           <e p="GameManager.cs" t="Include" />
           <e p="ProjectileManager.cs" t="Include" />
           <e p="ProjectorSelf.cs" t="Include" />
+          <e p="Store.cs" t="Include" />
+          <e p="Trigger.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="ARGameManager.cs" t="Include" />
