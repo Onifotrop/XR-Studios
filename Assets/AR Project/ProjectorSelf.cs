@@ -28,12 +28,6 @@ public class ProjectorSelf : MonoBehaviour
         dist = Vector3.Distance(targetPos, transform.position);
         transform.LookAt(targetPos);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (dist <= 0.5f)
-        {
-            print("Miss");
-            pM.hitCounter += 1f;
-            Destroy(this.gameObject);
-        }
 
     }
     
