@@ -18,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AR Project/ProjectorSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@4.1.7/Runtime/AR/ARPlaneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AR Project/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AR Project/Trigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AR Project/Store.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -26,6 +27,7 @@
       <option value="$PROJECT_DIR$/Assets/AR Project/Store.cs" />
       <option value="$PROJECT_DIR$/Assets/AR Project/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/AR Project/ProjectorSelf.cs" />
+      <option value="$PROJECT_DIR$/Assets/AR Project/Trigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zCKHZUTACS4521FBPdhRRFEOeU" />
@@ -78,7 +80,7 @@
       <workItem from="1633646557013" duration="5729000" />
       <workItem from="1633654094682" duration="4812000" />
       <workItem from="1633664163291" duration="1770000" />
-      <workItem from="1633674645139" duration="1240000" />
+      <workItem from="1633674645139" duration="1950000" />
     </task>
     <servers />
   </component>
