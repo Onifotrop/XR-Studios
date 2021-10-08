@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/AR Project/Project Testing.unity
+    guid: 0a405b39499f98748844de82cd29e29e
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 893affcfb2937aa44958c6bb6763a4db, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6365373b94caaac46a18f0f1ef99b9f9, type: 2}
