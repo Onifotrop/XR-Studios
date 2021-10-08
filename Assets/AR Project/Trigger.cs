@@ -22,6 +22,7 @@ public class Trigger : MonoBehaviour
         {
             print("Hit");
             pM.hitCounter -= 1f;
+            Destroy(other.gameObject);
         }
     }
 }
