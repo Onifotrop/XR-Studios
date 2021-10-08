@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.ARFoundation;
 public class GameManager : MonoBehaviour
 {
+    ARRaycastManager rayCastManager;
     public ProjectileManager pM;
     public GameObject spawnerTwo;
     public GameObject spawnerThree;
+    List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
+    public Camera arCam;
+    private RaycastHit hit;
     void Start()
     {
         pM = GameObject.Find("Spawner").GetComponent<ProjectileManager>();
@@ -15,6 +19,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.touchCount == 0) return;
+        Touch touch = Input.GetTouch(0);
+
+        if (rayCastManager.Raycast(touch.position, raycastHits))
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                
+                Ray ray = arCam.ScreenPointToRay(touch.position);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.collider.CompareTag("Target"))
+                    {
+                        Destroy(hit.collider.gameObject);
+                        pM.hitCounter += 1;
+                    }
+                    
+                }
+            }
+        }
         if (pM.hitCounter >= 10f)
         {
             spawnerTwo.SetActive(true);
@@ -24,4 +48,6 @@ public class GameManager : MonoBehaviour
             spawnerThree.SetActive(true);
         }
     }
+    
+
 }

@@ -22,8 +22,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/AR Project/ProjectileManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/AR Project/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/AR Project/ProjectorSelf.cs" />
+      <option value="$PROJECT_DIR$/Assets/AR Project/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zCKHZUTACS4521FBPdhRRFEOeU" />
@@ -74,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1633646545491</updated>
       <workItem from="1633646557013" duration="5729000" />
-      <workItem from="1633654094682" duration="4709000" />
+      <workItem from="1633654094682" duration="4812000" />
+      <workItem from="1633664163291" duration="1418000" />
     </task>
     <servers />
   </component>
