@@ -28,6 +28,8 @@
       <option value="$PROJECT_DIR$/Assets/AR Project/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/AR Project/Trigger.cs" />
       <option value="$PROJECT_DIR$/Assets/AR Project/ProjectorSelf.cs" />
+      <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/Editor/Build/Mapbox_iOS_build.cs" />
+      <option value="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Editor/UnityARBuildPostprocessor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zCKHZUTACS4521FBPdhRRFEOeU" />
@@ -81,7 +83,8 @@
       <workItem from="1633654094682" duration="4812000" />
       <workItem from="1633664163291" duration="1770000" />
       <workItem from="1633674645139" duration="3513000" />
-      <workItem from="1634281762631" duration="607000" />
+      <workItem from="1634281762631" duration="1248000" />
+      <workItem from="1634286876488" duration="20000" />
     </task>
     <servers />
   </component>
