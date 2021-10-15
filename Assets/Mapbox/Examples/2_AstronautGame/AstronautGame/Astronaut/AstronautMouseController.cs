@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mapbox.Unity.Map;
+using UnityEngine.XR.ARFoundation;
 
 namespace Mapbox.Examples
 {
 	public class AstronautMouseController : MonoBehaviour
 	{
+		[SerializeField] ARRaycastManager rayCastManager;
+		List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
 		[Header("Character")]
 		[SerializeField]
 		GameObject character;
@@ -51,6 +54,28 @@ namespace Mapbox.Examples
 
 		void Update()
 		{
+			
+			if(Input.touchCount == 0) return;
+			Touch touch = Input.GetTouch(0);
+			if (rayCastManager.Raycast(touch.position, raycastHits))
+			{
+				if (touch.phase == TouchPhase.Began)
+				{
+					ray = cam.ScreenPointToRay(touch.position);
+				}
+				
+				else if (touch.phase == TouchPhase.Ended)
+				{
+					if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+					{
+						startPoint.position = transform.localPosition;
+						endPoint.position = hit.point;
+						MovementEndpointControl(hit.point, true);
+
+						directions.Query(GetPositions, startPoint, endPoint, map);
+					}
+				}
+			}
 			if (characterDisabled)
 				return;
 

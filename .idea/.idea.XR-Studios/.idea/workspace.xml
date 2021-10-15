@@ -30,6 +30,7 @@
       <option value="$PROJECT_DIR$/Assets/AR Project/ProjectorSelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/Editor/Build/Mapbox_iOS_build.cs" />
       <option value="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Editor/UnityARBuildPostprocessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zCKHZUTACS4521FBPdhRRFEOeU" />
@@ -85,6 +86,7 @@
       <workItem from="1633674645139" duration="3513000" />
       <workItem from="1634281762631" duration="1248000" />
       <workItem from="1634286876488" duration="20000" />
+      <workItem from="1634304357623" duration="322000" />
     </task>
     <servers />
   </component>
